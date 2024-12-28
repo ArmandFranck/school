@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: student\views.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="student.views.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               student\views.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="E231">
+               <span class="count sev-2">
+                  62
+               </span>
+               <strong>E231:</strong> missing whitespace after ','
+               
+                  (and 1 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="student.views.source.html#l1">
+                  <tt><i>1</i> <span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">get_object_or_404</span><span class="p">,</span> <span class="n">render</span><span class="p">,</span><span class="n">redirect</span> </tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l37">
+                  <tt><i>37</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-dashboard.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l59">
+                  <tt><i>59</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-account-billing-payment-information.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l80">
+                  <tt><i>80</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-account-billing-subscription.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l101">
+                  <tt><i>101</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-account-billing-upgrade.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l123">
+                  <tt><i>123</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-account-edit.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l144">
+                  <tt><i>144</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-account-edit-basic.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l165">
+                  <tt><i>165</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-account-edit-profile.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l187">
+                  <tt><i>187</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-billing.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l231">
+                  <tt><i>231</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-cart.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l253">
+                  <tt><i>253</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-courses.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l295">
+                  <tt><i>295</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-earnings.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l321">
+                  <tt><i>321</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-forum.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="student.views.source.html#l345">
+                  <tt><i>345</i>                         <span class="s1">&#39;lesson&#39;</span><span class="p">:</span><span class="n">lesson</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l347">
+                  <tt><i>347</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-forum-lesson.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l370">
+                  <tt><i>370</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-forum-ask.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l395">
+                  <tt><i>395</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-forum-thread.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l417">
+                  <tt><i>417</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-help-center.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l439">
+                  <tt><i>439</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-invoice.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="student.views.source.html#l528">
+                  <tt><i>528</i>                                 <span class="s1">&#39;chapitre&#39;</span><span class="p">:</span><span class="n">chapitre</span><span class="p">,</span> </tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="student.views.source.html#l529">
+                  <tt><i>529</i>                                 <span class="s1">&#39;cours&#39;</span><span class="p">:</span><span class="n">cours</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l532">
+                  <tt><i>532</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-my-courses.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l553">
+                  <tt><i>553</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-quiz-list.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l574">
+                  <tt><i>574</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-profile.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l595">
+                  <tt><i>595</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-profile-posts.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l617">
+                  <tt><i>617</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-quiz-results.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l638">
+                  <tt><i>638</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-quizzes.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l660">
+                  <tt><i>660</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-statement.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l722">
+                  <tt><i>722</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-take-quiz.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l743">
+                  <tt><i>743</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-view-course.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="student.views.source.html#l764">
+                  <tt><i>764</i>                 <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;pages/fixed-student-account-edit.html&#39;</span><span class="p">,</span><span class="n">datas</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="student.views.source.html#l803">
+                  <tt><i>803</i>     <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">safe</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="student.views.source.html#l836">
+                  <tt><i>836</i>     <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">safe</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="student.views.source.html#l866">
+                  <tt><i>866</i>     <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">safe</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="student.views.source.html#l891">
+                  <tt><i>891</i>     <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">safe</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E251">
+               <span class="count sev-2">
+                  54
+               </span>
+               <strong>E251:</strong> unexpected spaces around keyword / parameter equals
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l17">
+                  <tt><i>17</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l44">
+                  <tt><i>44</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l65">
+                  <tt><i>65</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l86">
+                  <tt><i>86</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l108">
+                  <tt><i>108</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l129">
+                  <tt><i>129</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l150">
+                  <tt><i>150</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l172">
+                  <tt><i>172</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l216">
+                  <tt><i>216</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l237">
+                  <tt><i>237</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l280">
+                  <tt><i>280</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l303">
+                  <tt><i>303</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l331">
+                  <tt><i>331</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l355">
+                  <tt><i>355</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l379">
+                  <tt><i>379</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l402">
+                  <tt><i>402</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l424">
+                  <tt><i>424</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l512">
+                  <tt><i>512</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l538">
+                  <tt><i>538</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l559">
+                  <tt><i>559</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l580">
+                  <tt><i>580</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l602">
+                  <tt><i>602</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l623">
+                  <tt><i>623</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l645">
+                  <tt><i>645</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l707">
+                  <tt><i>707</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l728">
+                  <tt><i>728</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="student.views.source.html#l749">
+                  <tt><i>749</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E126">
+               <span class="count sev-2">
+                  26
+               </span>
+               <strong>E126:</strong> continuation line over-indented for hanging indent
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="student.views.source.html#l33">
+                  <tt><i>33</i>                                 <span class="s1">&#39;cours&#39;</span><span class="p">:</span> <span class="n">cours</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l36">
+                  <tt><i>36</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l58">
+                  <tt><i>58</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l79">
+                  <tt><i>79</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l100">
+                  <tt><i>100</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l122">
+                  <tt><i>122</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l143">
+                  <tt><i>143</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l164">
+                  <tt><i>164</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l186">
+                  <tt><i>186</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l230">
+                  <tt><i>230</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l252">
+                  <tt><i>252</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l294">
+                  <tt><i>294</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l369">
+                  <tt><i>369</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l416">
+                  <tt><i>416</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l438">
+                  <tt><i>438</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l528">
+                  <tt><i>528</i>                                 <span class="s1">&#39;chapitre&#39;</span><span class="p">:</span><span class="n">chapitre</span><span class="p">,</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l531">
+                  <tt><i>531</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l552">
+                  <tt><i>552</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l573">
+                  <tt><i>573</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l594">
+                  <tt><i>594</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l616">
+                  <tt><i>616</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l637">
+                  <tt><i>637</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l659">
+                  <tt><i>659</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l721">
+                  <tt><i>721</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l742">
+                  <tt><i>742</i>                            <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l763">
+                  <tt><i>763</i>                            <span class="p">}</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W293">
+               <span class="count sev-2">
+                  23
+               </span>
+               <strong>W293:</strong> blank line contains whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="student.views.source.html#l64">
+                  <tt><i>64</i>    </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l85">
+                  <tt><i>85</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l106">
+                  <tt><i>106</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l192">
+                  <tt><i>192</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l214">
+                  <tt><i>214</i>    </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l249">
+                  <tt><i>249</i>                    </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l251">
+                  <tt><i>251</i>                                 </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l258">
+                  <tt><i>258</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l400">
+                  <tt><i>400</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l422">
+                  <tt><i>422</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l459">
+                  <tt><i>459</i>             </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l600">
+                  <tt><i>600</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l643">
+                  <tt><i>643</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l665">
+                  <tt><i>665</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l696">
+                  <tt><i>696</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l700">
+                  <tt><i>700</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l705">
+                  <tt><i>705</i>    </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l748">
+                  <tt><i>748</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l770">
+                  <tt><i>770</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l805">
+                  <tt><i>805</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l838">
+                  <tt><i>838</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l840">
+                  <tt><i>840</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l868">
+                  <tt><i>868</i>     </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  15
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+                  (and 1 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l65">
+                  <tt><i>65</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l86">
+                  <tt><i>86</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l129">
+                  <tt><i>129</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l150">
+                  <tt><i>150</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l237">
+                  <tt><i>237</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l280">
+                  <tt><i>280</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l446">
+                  <tt><i>446</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span><span class="o">=</span><span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 3:</p>
+               
+               <a href="student.views.source.html#l489">
+                  <tt><i>489</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span><span class="o">=</span><span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l512">
+                  <tt><i>512</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l538">
+                  <tt><i>538</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l559">
+                  <tt><i>559</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l580">
+                  <tt><i>580</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l623">
+                  <tt><i>623</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l728">
+                  <tt><i>728</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="student.views.source.html#l749">
+                  <tt><i>749</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W291">
+               <span class="count sev-2">
+                  10
+               </span>
+               <strong>W291:</strong> trailing whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="student.views.source.html#l1">
+                  <tt><i>1</i> <span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">get_object_or_404</span><span class="p">,</span> <span class="n">render</span><span class="p">,</span><span class="n">redirect</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l10">
+                  <tt><i>10</i> <span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">JsonResponse</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l24">
+                  <tt><i>24</i>                     <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="s1">&#39;dashboard&#39;</span><span class="p">)</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l244">
+                  <tt><i>244</i>                     <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="s1">&#39;dashboard&#39;</span><span class="p">)</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l528">
+                  <tt><i>528</i>                                 <span class="s1">&#39;chapitre&#39;</span><span class="p">:</span><span class="n">chapitre</span><span class="p">,</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l788">
+                  <tt><i>788</i>             <span class="n">student</span><span class="o">.</span><span class="n">photo</span> <span class="o">=</span> <span class="n">image</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l793">
+                  <tt><i>793</i>         <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l826">
+                  <tt><i>826</i>             <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l855">
+                  <tt><i>855</i>         <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l880">
+                  <tt><i>880</i>         <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E203">
+               <span class="count sev-2">
+                  6
+               </span>
+               <strong>E203:</strong> whitespace before ':'
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="student.views.source.html#l800">
+                  <tt><i>800</i>         <span class="s2">&quot;success&quot;</span> <span class="p">:</span> <span class="n">success</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l801">
+                  <tt><i>801</i>         <span class="s2">&quot;message&quot;</span> <span class="p">:</span> <span class="n">message</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l833">
+                  <tt><i>833</i>         <span class="s2">&quot;success&quot;</span> <span class="p">:</span> <span class="n">success</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l834">
+                  <tt><i>834</i>         <span class="s2">&quot;message&quot;</span> <span class="p">:</span> <span class="n">message</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l862">
+                  <tt><i>862</i>         <span class="s2">&quot;success&quot;</span> <span class="p">:</span> <span class="n">success</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l887">
+                  <tt><i>887</i>         <span class="s2">&quot;success&quot;</span> <span class="p">:</span> <span class="n">success</span><span class="p">,</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E303">
+               <span class="count sev-2">
+                  6
+               </span>
+               <strong>E303:</strong> too many blank lines (3)
+               
+                  (and 2 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Too many blank lines (3):</p>
+               
+               <a href="student.views.source.html#l303">
+                  <tt><i>303</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (5):</p>
+               
+               <a href="student.views.source.html#l331">
+                  <tt><i>331</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (3):</p>
+               
+               <a href="student.views.source.html#l355">
+                  <tt><i>355</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (4):</p>
+               
+               <a href="student.views.source.html#l379">
+                  <tt><i>379</i> <span class="nd">@login_required</span><span class="p">(</span><span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;login&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (3):</p>
+               
+               <a href="student.views.source.html#l488">
+                  <tt><i>488</i> <span class="c1"># Vue pour une autre page de messages (par exemple, vue simplifiée ou différente)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Too many blank lines (4):</p>
+               
+               <a href="student.views.source.html#l841">
+                  <tt><i>841</i> <span class="k">def</span> <span class="nf">post_forum</span><span class="p">(</span><span class="n">request</span><span class="p">):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E123">
+               <span class="count sev-2">
+                  4
+               </span>
+               <strong>E123:</strong> closing bracket does not match indentation of opening bracket's line
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="student.views.source.html#l802">
+                  <tt><i>802</i>         <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l835">
+                  <tt><i>835</i>         <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l865">
+                  <tt><i>865</i>         <span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l890">
+                  <tt><i>890</i>         <span class="p">}</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E722">
+               <span class="count sev-2">
+                  2
+               </span>
+               <strong>E722:</strong> do not use bare 'except'
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="student.views.source.html#l791">
+                  <tt><i>791</i>         <span class="k">except</span><span class="p">:</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="student.views.source.html#l796">
+                  <tt><i>796</i>     <span class="k">except</span><span class="p">:</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>

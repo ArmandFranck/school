@@ -1,0 +1,4 @@
+[flake8]
+max-line-length = 120
+exclude = env, migrations, __pycache__, manage.py
+ignore = E501, W503  # Exemple pour ignorer des règles spécifiques

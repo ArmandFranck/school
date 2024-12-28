@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect 
+from django.shortcuts import get_object_or_404, render,redirect 
 from django.contrib.auth.decorators import login_required
 from school import models as school_models
 from forum import models as forum_models
@@ -442,56 +442,72 @@ def invoice(request):
             print("3")
             return redirect("/admin/")
 
-@login_required(login_url = 'login')
+# Vue pour accéder aux messages d'une classe spécifique
+@login_required(login_url='login')
 def messages(request, classe):
-    if request.user.is_authenticated:
-        try:
-            try:
-                print("1")
-                if request.user.instructor:
-                    return redirect('dashboard')
-            except Exception as e:
-                print(e)
-                print("2")
-                if request.user.student_user:
-                    exist_classe = chat_models.Salon.objects.get(classe=request.user.student_user.classe)
-                    info = school_models.Classe.objects.get(id=request.user.student_user.classe.id)
-                    instructor = instructor_models.Instructor.objects.get(classe__id=request.user.student_user.classe.id)
-                    user_room = ''                    
-                    print(user_room)
-                    datas = {
-                        'instructor':instructor,
-                        'info_classe':info,
-                        'classe': exist_classe,
-                        'classe_json': mark_safe(json.dumps(exist_classe.id)),
-                        'username': mark_safe(json.dumps(request.user.username))
-                    }
-                return render(request,'pages/fixed-student-messages.html',datas)
-        except Exception as e:
-            print(e)
-            print("3")
-            return redirect("/admin/")
-    
-# @login_required(login_url = 'login')
-# def messages_2(request):
-#     if request.user.is_authenticated:
-#         try:
-#             try:
-#                 print("1")
-#                 if request.user.instructor:
-#                     return redirect('dashboard')
-#             except Exception as e:
-#                 print(e)
-#                 print("2")
-#                 if request.user.student_user:
-#                     datas = {
+    # Rediriger si l'utilisateur est un instructeur
+    if hasattr(request.user, 'instructor'):
+        return redirect('dashboard')
 
-#                            }
-#                 return render(request,'pages/fixed-student-messages-2.html',datas)
-#         except Exception as e:
-#             print(e)
-#             print("3")
-#             return redirect("/admin/")
+    # Vérifier si l'utilisateur est un élève
+    if hasattr(request.user, 'student_user'):
+        try:
+            # Récupérer les données associées à la classe de l'élève
+            student_classe = request.user.student_user.classe
+            exist_classe = get_object_or_404(chat_models.Salon, classe=student_classe)
+            info = get_object_or_404(school_models.Classe, id=student_classe.id)
+            
+            # Utiliser filter() au lieu de get() pour gérer plusieurs instructeurs
+            instructors = instructor_models.Instructor.objects.filter(classe__id=student_classe.id)
+
+            # Si plusieurs instructeurs existent, choisir le premier ou ajuster selon vos besoins
+            if instructors.exists():
+                instructor = instructors.first()
+            else:
+                instructor = None
+
+            # Préparer les données pour le template
+            datas = {
+                'instructor': instructor,
+                'info_classe': info,
+                'classe': exist_classe,
+                'classe_json': mark_safe(json.dumps(exist_classe.id)),
+                'username': mark_safe(json.dumps(request.user.username)),
+            }
+            return render(request, 'pages/fixed-student-messages.html', datas)
+
+        except Exception as e:
+            print(f"Erreur lors de la récupération des données : {e}")
+            return redirect("/admin/")
+
+    # Rediriger par défaut si l'utilisateur n'est ni élève ni instructeur
+    return redirect('login')
+
+
+
+# Vue pour une autre page de messages (par exemple, vue simplifiée ou différente)
+@login_required(login_url='login')
+def messages_2(request):
+    # Rediriger si l'utilisateur est un instructeur
+    if hasattr(request.user, 'instructor'):
+        return redirect('dashboard')
+
+    # Vérifier si l'utilisateur est un élève
+    if hasattr(request.user, 'student_user'):
+        try:
+            # Ajouter les données nécessaires pour le rendu
+            datas = {
+                'username': mark_safe(json.dumps(request.user.username)),
+                # Ajoutez d'autres informations ici si nécessaire
+            }
+            return render(request, 'pages/fixed-student-messages-2.html', datas)
+
+        except Exception as e:
+            print(f"Erreur lors de la récupération des données : {e}")
+            return redirect("/admin/")
+
+    # Rediriger par défaut si l'utilisateur n'est ni élève ni instructeur
+    return redirect('login')
 
 @login_required(login_url = 'login')
 def my_courses(request):
@@ -673,27 +689,19 @@ def statement(request):
 
 @login_required(login_url='login')
 def take_course(request, slug):
-    if request.user.is_authenticated:
-        try:
-            try:
-                print("1")
-                if request.user.instructor:
-                    return redirect('dashboard')
-            except Exception as e:
-                print(e)
-                print("2")
-                if request.user.student_user:
-                    cours = school_models.Cours.objects.get(slug=slug)
-                    instructor = instructor_models.Instructor.objects.get(classe__id=request.user.student_user.classe.id)
-                    datas = {
-                        'cours': cours,
-                        'instructor' : instructor,
-                    }
-                return render(request,'pages/fixed-student-take-course.html',datas)
-        except Exception as e:
-            print(e)
-            print("3")
-            return redirect('my_courses')
+
+    try:
+        # Récupérer le cours par son slug
+        cours = school_models.Cours.objects.get(slug=slug)
+        
+        # Assurer que l'instructeur existe pour cette classe
+        instructors = instructor_models.Instructor.objects.filter(classe__id=request.user.student_user.classe.id)
+        instructor = instructors.first() if instructors.exists() else None
+        
+        # Renvoyer la page avec les données
+        return render(request, 'pages/fixed-student-take-course.html', {'cours': cours, 'instructor': instructor})
+    except school_models.Cours.DoesNotExist:
+        return redirect('my-courses')
    
 
 @login_required(login_url = 'login')

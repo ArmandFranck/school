@@ -46,7 +46,5 @@ def _register(model,admin_class):
 
 
 _register(models.Student, StudentAdmin)
-_register(models.StudentReponse, StudentReponseAdmin)
-
-
+_register(models.StudentResponse, StudentReponseAdmin)
 
